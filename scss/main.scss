@@ -1,0 +1,214 @@
+// font-family: 'Red Hat Display', sans-serif;
+
+$primary-bg: hsl(225, 100%, 94%);
+$primary-items: hsl(245, 75%, 52%);
+$main-hover: hsl(254, 95%, 69%);
+
+$card-main: hsl(225, 100%, 98%);
+$card-hover: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-color: $primary-bg;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Red Hat Display', sans-serif;
+	overflow: hidden;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem 2.5rem;
+	border-radius: 2rem;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+	&__header {
+		width: 100%;
+		.header__img {
+			display: block;
+			width: 100%;
+			height: 17rem;
+			background-image: url(../images/illustration-hero.svg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		width: 100%;
+		padding: 2.5rem;
+		font-size: 1.6rem;
+		.card__description {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin-bottom: 2rem;
+			gap: 1.5rem;
+
+			.card__title {
+				color: $dark-blue;
+				font-weight: 900;
+			}
+
+			.card__text {
+				padding: 0 0.5rem;
+				color: $card-hover;
+				font-weight: 500;
+				text-align: center;
+				line-height: 1.6;
+			}
+		}
+
+		.card__plan {
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+			width: 100%;
+			padding: 1.5rem;
+			margin-bottom: 2rem;
+			background-color: $card-main;
+			border-radius: 1.5rem;
+			.plan__type {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-inline-start: 1.5rem;
+				font-size: 1.5rem;
+				.plan__name {
+					color: $dark-blue;
+					font-weight: 900;
+				}
+				.plan__price {
+					color: $card-hover;
+				}
+			}
+
+			.plan__change {
+				margin-inline-start: auto;
+				font-size: 1.4rem;
+				font-weight: 700;
+				cursor: pointer;
+				a {
+					padding: 2rem 0;
+					color: $primary-items;
+					transition: 0.3s;
+					&:hover {
+						text-decoration: none;
+						color: $main-hover;
+					}
+				}
+			}
+		}
+		.pay__btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 1.8rem;
+			width: 100%;
+			font-size: 1.6rem;
+			font-weight: 700;
+			border: none;
+			cursor: pointer;
+			margin-bottom: 1rem;
+			background-color: $primary-items;
+			border-radius: 1rem;
+			color: white;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: $main-hover;
+			}
+		}
+		.cancel__btn {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			padding: 2rem 4rem;
+			background: none;
+			color: $card-hover;
+			font-weight: 900;
+			text-decoration: none;
+			cursor: pointer;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
+.attribution {
+	position: absolute;
+	width: 100%;
+	bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: $dark-blue;
+	font-weight: 700;
+
+	a {
+		text-decoration: none;
+		color: $card-hover;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $main-hover;
+		}
+	}
+}
+
+@media (min-width: 400px) {
+	body {
+		background-image: url(../images/pattern-background-desktop.svg);
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+		max-width: 375px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.card {
+		width: 100%;
+		max-width: 450px;
+		&__info {
+			padding: 2.5rem 5rem;
+		}
+	}
+}

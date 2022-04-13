@@ -1,0 +1,286 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-color: #e0e8ff;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Red Hat Display', sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 2.5rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__header {
+  width: 100%;
+}
+
+.card__header .header__img {
+  display: block;
+  width: 100%;
+  height: 17rem;
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.card__info .card__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.card__info .card__description .card__title {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card__info .card__description .card__text {
+  padding: 0 0.5rem;
+  color: #7280a7;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.card__info .card__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #f5f7ff;
+  border-radius: 1.5rem;
+}
+
+.card__info .card__plan .plan__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.card__info .card__plan .plan__type .plan__name {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card__info .card__plan .plan__type .plan__price {
+  color: #7280a7;
+}
+
+.card__info .card__plan .plan__change {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card__info .card__plan .plan__change a {
+  padding: 2rem 0;
+  color: #3829e0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card__info .card__plan .plan__change a:hover {
+  text-decoration: none;
+  color: #8865fb;
+}
+
+.card__info .pay__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.8rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: #3829e0;
+  border-radius: 1rem;
+  color: white;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.card__info .pay__btn:hover {
+  background-color: #8865fb;
+}
+
+.card__info .cancel__btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  background: none;
+  color: #7280a7;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.card__info .cancel__btn:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #7280a7;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.attribution a:hover {
+  color: #8865fb;
+}
+
+@media (min-width: 400px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 100%;
+    max-width: 450px;
+  }
+  .card__info {
+    padding: 2.5rem 5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
