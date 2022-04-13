@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Order Summary Component](https://your-solution-url.com)
-- Live Site URL: [Order Summary Component](https://your-live-site-url.com)
+- Solution URL: [Order Summary Component](https://github.com/miroslaw-mroczkowski/Order-Summary-Component)
+- Live Site URL: [Order Summary Component](https://miroslaw-mroczkowski.github.io/Order-Summary-Component/)
 
 ## My process
 
